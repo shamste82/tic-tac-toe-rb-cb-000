@@ -72,3 +72,12 @@ def won?(board)
   end
   return false
 end
+
+def full?(board)
+  for i in(0..8)
+    if !position_taken?(board, i)
+      return false
+    end
+  end
+  return true
+end
