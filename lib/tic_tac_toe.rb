@@ -121,4 +121,5 @@ def play(board)
   elsif winner(board)
     winner = winner(board)
     puts "Congratulation player #{winner}"
+  end
 end
