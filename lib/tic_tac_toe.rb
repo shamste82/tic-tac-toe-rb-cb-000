@@ -37,7 +37,7 @@ def turn(board)
   puts "Please enter 1-9:"
   input = gets.strip
   user_input = input_to_index(input)
-  if valid_move?(board, user_input)
+  if valid_move?(board, user_input, current_player(board))
     move(board, user_input)
     display_board(board)
     return
@@ -47,4 +47,8 @@ end
 
 def turn_count(board)
   board.count{|xo| xo == "X" || xo == "O"}
+end
+
+def current_player(board)
+  return turn_count(board).even? ? "X" : "O"
 end
