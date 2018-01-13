@@ -47,3 +47,4 @@ end
 
 def turn_count(board)
   board.count{|xo| xo == "X" || xo == "O"}
+end 
