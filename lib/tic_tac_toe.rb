@@ -120,6 +120,6 @@ def play(board)
     puts "It has been a draw"
   elsif winner(board)
     winner = winner(board)
-    puts "Congratulation player #{winner}"
+    puts "Congratulations #{winner}!"
   end
 end
